@@ -32,10 +32,16 @@ int main(){
     scanf(" %d",&power);
 
     int i=0 , n=1;
-    for(i=0; i < power; i++){
+
+/*   for(i=0; i < power; i++){
             n=n*base;
     }
+*/
 
+    while(i<power){
+        n *= base;
+        i++;
+    }
 
     newInputValue = n;
 
